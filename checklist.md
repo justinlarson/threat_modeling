@@ -70,9 +70,23 @@ Use the system model to identify possible threat agents, the following are just 
 - [ ] Malicious Developer (MD)
 - [ ] Nation State Actor (NSA)
 
-## Threat Matrix
+## Attacker Focused Matrix
 
 Threat Agent | Endpoint/Asset | Attack | Attack Type | Goal | Impact | Mitigation | Finding (if any)
 ------------ | -------------- | ------ | -------------- | ---- | ------ | ---------- | ----------------
 AEA | Login Page | Brute-force Attack | Spoofing | Access User Account | High: Exposure of Client Data and App Functionality | Authentication Controls | None
 AIA | Registration Page | User Enumeration | Information Disclosure | Determine Confidential Information (usernames) | Medium: Exposure of Known User Accounts | Out-of-band communications | Flow validates account by returning different page based on provided account existence
+
+## Processed Focused Matrix
+
+Goal | Asset | Threat Agent | Attack | Attack Type | Impact | Mitigation | Finding (if any)
+------------ | -------------- | ------ | -------------- | ---- | ------ | ---------- | ----------------
+Access User Account | Login Page | AEA | Brute-force Attack | Spoofing | High: Exposure of Client Data and App Functionality | Authentication Controls | None
+Determine Confidential Information (usernames) | Registration Page | AIA | User Enumeration | Information Disclosure | Medium: Exposure of Known User Accounts | Out-of-band communications | Flow validates account by returning different page based on provided account existence
+
+## Asset Focused Matrix
+
+Asset | Threat Agent | Attack | Attack Type | Goal | Impact | Mitigation | Finding (if any)
+------------ | -------------- | ------ | -------------- | ---- | ------ | ---------- | ----------------
+Login Page | AEA | Brute-force Attack | Spoofing | Access User Account | High: Exposure of Client Data and App Functionality | Authentication Controls | None
+Registration Page | AIA | User Enumeration | Information Disclosure | Determine Confidential Information (usernames) | Medium: Exposure of Known User Accounts | Out-of-band communications | Flow validates account by returning different page based on provided account existence
