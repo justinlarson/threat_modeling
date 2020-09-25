@@ -77,7 +77,7 @@ Threat Agent | Endpoint/Asset | Attack | Attack Type | Goal | Impact | Mitigatio
 AEA | Login Page | Brute-force Attack | Spoofing | Access User Account | High: Exposure of Client Data and App Functionality | Authentication Controls | None
 AIA | Registration Page | User Enumeration | Information Disclosure | Determine Confidential Information (usernames) | Medium: Exposure of Known User Accounts | Out-of-band communications | Flow validates account by returning different page based on provided account existence
 
-## Processed Focused Matrix
+## Process Focused Matrix
 
 Goal | Asset | Threat Agent | Attack | Attack Type | Impact | Mitigation | Finding (if any)
 ------------ | -------------- | ------ | -------------- | ---- | ------ | ---------- | ----------------
