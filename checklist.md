@@ -1,8 +1,8 @@
 # Threat Modeling
 ### Checklist
 
-Each of the overarching items need to be reviewed, but every item is not necessarily applicable
-Based in part on the [OWASP Threat Modeling Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) combined with industry experience.
+Each of the overarching items need to be reviewed, but every item is not necessarily applicable.
+Based in part on the [OWASP Threat Modeling Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html).
 
 A threat model should answer the following questions:
 
